@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pilih Dukungan Aksesibilitas - HealthPal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f9ff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #7b4dde;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #7b4dde;
+    }
+    p {
+      margin-bottom: 1.5rem;
+    }
+    .option {
+      background: #eef0ff;
+      border: 2px solid transparent;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+    .option:hover {
+      background: #dedfff;
+      border-color: #7b4dde;
+    }
+    .icon {
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #7b4dde;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 1rem;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #6a3bbd;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>HealthPal</h2>
+  </header>
+
+  <div class="container" role="main">
+    <h1>👋 Pilih Jenis Dukungan Aksesibilitas</h1>
+    <p>Kami akan menyesuaikan tampilan dan fitur agar pengalaman Anda lebih nyaman dan mudah digunakan.</p>
+
+    <div class="option" tabindex="0" role="button" aria-pressed="false">
+      <div class="icon">🦯</div>
+      <div>
+        <strong>Tunanetra / Gangguan Penglihatan</strong>
+        <br>Aktifkan fitur voice feedback, kontras tinggi, dan ukuran teks besar.
+      </div>
+    </div>
+
+    <div class="option" tabindex="0" role="button" aria-pressed="false">
+      <div class="icon">🧏</div>
+      <div>
+        <strong>Tunarungu / Gangguan Pendengaran</strong>
+        <br>Notifikasi visual & getaran, subtitle otomatis untuk panduan audio.
+      </div>
+    </div>
+
+    <div class="option" tabindex="0" role="button" aria-pressed="false">
+      <div class="icon">♿</div>
+      <div>
+        <strong>Disabilitas Motorik</strong>
+        <br>Tombol besar, navigasi gesture, dan kontrol suara.
+      </div>
+    </div>
+
+    <div class="option" tabindex="0" role="button" aria-pressed="false">
+      <div class="icon">🤝</div>
+      <div>
+        <strong>Lainnya / Kustom</strong>
+        <br>Sesuaikan aksesibilitas sendiri sesuai kebutuhan Anda.
+      </div>
+    </div>
+
+    <a href="#" class="btn" role="button">Lanjut</a>
+  </div>
+
+</body>
+</html>

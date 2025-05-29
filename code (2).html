@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hubungkan Perangkat - HealthPal</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f9ff;
+      color: #333;
+    }
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .status, .device-list, .connection-status {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: #eef4ff;
+      border-left: 4px solid #0077cc;
+      border-radius: 8px;
+    }
+    .device {
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      background: #e2ecf8;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .device:hover {
+      background: #d1e4f7;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #005fa3;
+    }
+    .btn-secondary {
+      background: #888;
+      margin-left: 1rem;
+    }
+    .btn-secondary:hover {
+      background: #666;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" style="color:white; text-decoration: none;">🔙 Kembali</a>
+    <span>HealthPal</span>
+  </header>
+
+  <div class="container" role="main">
+    <h1>📶 Hubungkan Perangkat Anda</h1>
+    <p>Untuk mulai menggunakan HealthPal, sambungkan aplikasi ini ke perangkat wearable Anda.</p>
+    <p>Pastikan Bluetooth aktif dan perangkat berada dalam jangkauan.</p>
+
+    <div class="status" role="alert">
+      ✅ Bluetooth aktif
+    </div>
+
+    <div class="device-list" aria-labelledby="device-list-title">
+      <strong id="device-list-title">Pilih perangkat Anda:</strong>
+      <div class="device" tabindex="0" role="button" aria-pressed="false">📟 HealthBand_0021</div>
+      <div class="device" tabindex="0" role="button" aria-pressed="false">📟 SmartPal_9324</div>
+      <div class="device" tabindex="0" role="button" aria-pressed="false">📟 WearCare_101</div>
+    </div>
+
+    <div class="connection-status" role="status">
+      🔄 Menghubungkan ke <strong>HealthBand_0021</strong>...
+    </div>
+
+    <div class="status" role="alert">
+      🎉 Perangkat berhasil terhubung!
+      <br>
+      ✅ Data Anda sekarang akan disinkronkan secara otomatis.
+    </div>
+
+    <a href="#" class="btn">Lanjut ke Beranda</a>
+    <a href="#" class="btn btn-secondary">❓ Butuh Bantuan?</a>
+  </div>
+
+  <footer>
+    HealthPal © 2025 – Aplikasi Kesehatan Ramah Disabilitas
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lapor Darurat - HealthPal, aplikasi untuk melaporkan keadaan darurat.">
+  <meta name="keywords" content="darurat, kesehatan, laporan, polisi, ambulans">
+  <title>Lapor Darurat - HealthPal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff5f5;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    header {
+      background: #ff4b5c;
+      color: white;
+      text-align: center;
+      padding: 1.2rem;
+    }
+    .container {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #d62828;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    .emergency-btn {
+      display: block;
+      background: #ff4b5c;
+      color: white;
+      font-size: 1.3rem;
+      padding: 1.2rem;
+      margin: 1rem 0;
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .emergency-btn:hover {
+      background: #c81d2f;
+    }
+    .icon {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+    .note {
+      background: #fff3cd;
+      padding: 1rem;
+      border-left: 5px solid #ffc107;
+      margin-top: 2rem;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>🔴 Pusat Laporan Darurat</h2>
+</header>
+
+<div class="container">
+  <h1>🚨 Keadaan Darurat?</h1>
+  <p>Jika Anda atau orang di sekitar Anda dalam situasi gawat, silakan gunakan salah satu tombol berikut untuk segera menghubungi layanan terkait:</p>
+
+  <button class="emergency-btn" aria-label="Hubungi Polisi (112)"><span class="icon">📞</span>Hubungi Polisi (112)</button>
+  <button class="emergency-btn" aria-label="Hubungi Ambulans (119)"><span class="icon">🚑</span>Hubungi Ambulans (119)</button>
+  <button class="emergency-btn" aria-label="Bagikan Lokasi ke Keluarga"><span class="icon">📍</span>Bagikan Lokasi ke Keluarga</button>
+  <button class="emergency-btn" aria-label="Kirim Laporan ke Dinsos / Pemerintah"><span class="icon">📤</span>Kirim Laporan ke Dinsos / Pemerintah</button>
+
+  <div class="note">
+    📌 Catatan: Lokasi Anda akan dikirim otomatis ke layanan darurat jika izin lokasi aktif.
+  </div>
+</div>
+
+</body>
+</html>
